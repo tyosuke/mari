@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>Chatbot</h1>
+
+    <form method="POST">
+        <label for="user_input">User Input:</label>
+        <input type="text" name="user_input" id="user_input">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>User Input:</h2>
+    <p>{{ user_input }}</p>
+
+    <h2>GPT-2 Response:</h2>
+    <p>{{ gpt2_response }}</p>
+
+    <h2>Markov Response:</h2>
+    <p>{{ markov_response }}</p>
+</body>
+</html>
